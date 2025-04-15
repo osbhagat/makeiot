@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Responsive Navbar</title>
+  <title >MAKE IOT MASTER EMBEDDED SYSTEM</title>
   <style>
     * {
       margin: 0;
@@ -336,40 +336,52 @@
   <div class="top-header">
     <div style=" font-size: 18px;">📧info@makeiot.in</div>
     <div class="center-text" style="color:#3b2f2f; font-size: 18px;">🚀 Kickstart Your Career! Land Your First Job in Just 60 Days! 🎯</div>
-    <div style="font-size:18px;">📞 +918856905687</div>
+    <div style="font-size:18px;"> +918856905687</div>
+  </div>
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="Make_IoT__3_-removebg-preview.png" alt="Logo" />
   </div>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo">
-      <img src="Make_IoT__3_-removebg-preview.png" alt="Logo" />
-    </div>
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
-    <div class="menu-toggle" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+  <div class="nav-section" id="navSection">
+    <ul class="nav-menu">
+      <li><a href="#hero-section">Home</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#event">Events</a></li>
+      <li><a href="https://forms.gle/2yhzdZrYbTe3x3ax8" target="_blank">Internship</a></li>
+      <li><a href="#about-us">About Us</a></li>
+      <li class="li5"><a href="#batches">Batches</a></li>
+      <li class="li6"><a href="#batches1">Batches</a></li>
+    </ul>
+    <button id="callbackBtn" class="navbar-callback-btn"> Request a Callback</button>
+  </div>
+</nav>
 
-    <div class="nav-section" id="navSection">
-      <ul class="nav-menu">
-        <li><a href="#hero-section">Home</a></li>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#event">Events</a></li>
-        <li><a href="https://forms.gle/2yhzdZrYbTe3x3ax8" target="_blank">Internship</a></li>
-        <li><a href="#about-us">About Us</a></li>
-        <li class="li5"><a href="#batches">Batches</a></li>
-        <li class="li6"><a href="#batches1" >Batches</a></li>
-      </ul>
-      <button id="callbackBtn" class="navbar-callback-btn">📞 Request a Callback</button>
-    </div>
-  </nav>
+<script>
+  // Function to toggle the nav menu
+  function toggleMenu() {
+    document.getElementById('navSection').classList.toggle('show');
+  }
 
-  <script>
-    function toggleMenu() {
-      document.getElementById('navSection').classList.toggle('show');
+  // Event listener to close the nav menu when clicked outside
+  document.addEventListener('click', function(event) {
+    const navSection = document.getElementById('navSection');
+    const menuToggle = document.querySelector('.menu-toggle');
+    
+    // Close the menu if click is outside the nav-section or menu-toggle
+    if (!navSection.contains(event.target) && !menuToggle.contains(event.target)) {
+      navSection.classList.remove('show');
     }
-  </script>
+  });
+</script>
+
 
 
 
@@ -2013,9 +2025,9 @@ setInterval(showNextImage, 2000); // 3000 ms = 3 seconds
       <div class="footer-column">
         <h3>Contact Us</h3>
         <p>
-          <i class="fas fa-phone-alt" style="margin-right: 8px;"></i>
+          <i class="fas fa-phone-alt" style="margin-right: 8px; transform: rotate(100deg); display: inline-block;"></i>
           <a href="tel:+918856905687">+91 88569 05687</a>
-        </p>
+          
         <p>
           <i class="fas fa-envelope" style="margin-right: 8px;"></i>
           <a href="mailto:info@makeiot.in">info@makeiot.in</a>
