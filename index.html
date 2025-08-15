@@ -29,7 +29,7 @@
       top: 0;
       left: 0;
       z-index: 1100;
-      height: 40px;
+      height: 20px;
     }
 
     .top-header .center-text {
@@ -37,19 +37,19 @@
       left: 50%;
       transform: translateX(-50%);
       font-weight: 600;
-    }
+    } 
 
     .navbar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #eae5e5;
+      background-color: #E1E5FE;
       padding: 15px 30px;
       position: fixed;
-      top: 40px;
+      top: 0px;
       width: 100%;
       z-index: 1000;
-      height: 80px;
+      height: 70px;
       flex-wrap: wrap;
     }
 
@@ -115,10 +115,6 @@
       margin: 4px 0;
       border-radius: 2px;
     }
-
-
-
-
     .callback-form {
       position: fixed;
       top: 170px;
@@ -184,7 +180,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 10px 20px;
-    top: 30px;
+    top: 0px;
     gap: 20px;
     height: 60px;
 
@@ -233,13 +229,13 @@
   flex-direction: column;
   align-items: flex-start;
   position: fixed;
-  top: 70px;
+  top: 50px;
   right: -100%;
   width: 60%;
   max-width: 200px;
   background-color: #eae5e5;
   padding: 7px;
-  height: 330px; /* Use pixel height instead of vh */
+  height: 310px; /* Use pixel height instead of vh */
   z-index: 999;
   transition: right 0.3s ease-in-out;
 }
@@ -247,7 +243,7 @@
 
   .nav-section.show {
     right: 0;
-    top:89px;
+    top:69px;
   }
 
   .nav-menu {
@@ -322,22 +318,18 @@
       z-index: 2000;
     }
 
-
-
-
-
 }
 
   </style>
 </head>
-<body>
+
 
   <!-- Top Header -->
-  <div class="top-header">
+   <!-- <div class="top-header">
     <div style=" font-size: 18px;">📧info@makeiot.in</div>
-    <div class="center-text" style="color:#3b2f2f; font-size: 18px;">🚀 Kickstart Your Career! Land Your First Job in Just 90 Days! 🎯</div>
+    <div class="center-text" style="color:#3b2f2f; font-size: 18px;">🚀 Kickstart Your Career! 🎯</div>
     <div style="font-size:18px;"> +918856905687</div>
-  </div>
+  </div>  -->
 <!-- Navbar -->
 <nav class="navbar">
   <div class="logo">
@@ -353,14 +345,14 @@
   <div class="nav-section" id="navSection">
     <ul class="nav-menu">
       <li><a href="#hero-section">Home</a></li>
-      <li><a href="#courses">Courses</a></li>
-      <li><a href="#event">Events</a></li>
-      <li><a href="https://forms.gle/2yhzdZrYbTe3x3ax8" target="_blank">Internship</a></li>
+       <li><a href="#courses">Courses</a></li>
+      <li><a href="#event">Events</a></li> 
+      <li><a href="https://forms.gle/2yhzdZrYbTe3x3ax8" target="_blank">Internship</a></li> 
       <li><a href="#about-us">About Us</a></li>
-      <li class="li5"><a href="#batches">Batches</a></li>
-      <li class="li6"><a href="#batches1">Batches</a></li>
-    </ul>
+      
+      </ul>
     <button id="callbackBtn" class="navbar-callback-btn"> Request Callback</button>
+
   </div>
 </nav>
 
@@ -381,10 +373,6 @@
     }
   });
 </script>
-
-
-
-
 
 <script>
   // Get nav items and the nav container
@@ -428,16 +416,7 @@
   callbackForm.classList.add('active');
   closeMenu(); // ✅ Close the nav menu if open
 });
-
-
-
 </script>
-
-
-
-
-
-
 
   <!-- Callback Form -->
   <div class="callback-form" id="callbackForm">
@@ -453,11 +432,6 @@
       <button type="submit">Submit</button>
     </form>
   </div>
-
-
-  
-
-
 
 <!-- Swiper CSS ONLY FOR HERO -->
 <link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css">
@@ -493,30 +467,16 @@
     background-position: center;
   }
 
-  .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.4); /* dark overlay for readability */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 30px;
-  }
-
-  .hero-content {
-    width: 50%;
-    color: white;
-    animation: fadeInLeft 1s ease-in-out;
-  }
-
-  .hero-content h1 {
-    font-size: 3rem;
+    .hero-content {
+      width: 100%;
+     } 
+   .hero-content h1 {
+    font-size: 4.5rem;
     margin-bottom: 15px;
-    color: #FFD700; /* Gold */
+    color: #ffffff; 
+    /* color: #b5bef5; */
     text-shadow: 2px 2px 5px #000000; /* Black Shadow */
+     animation: fadeInLeft 2s ease-in-out;
   }
 
   .hero-content p {
@@ -524,6 +484,26 @@
     margin-bottom: 20px;
     color: #ffffff;
   }
+
+  .hero-overlay {
+    position: absolute;
+    top: 137px;
+    left: 200px;
+    height: 100%;
+    width: 100%;
+   /* background: rgba(0, 0, 0, 0.4);  dark overlay for readability */
+    display: flex;
+    align-items:left;
+    padding: 0 30px;
+  }
+
+  .hero-content {
+    width: 100%;
+    color: white;
+    animation: fadeInLeft 1s ease-in-out;
+  }
+
+ 
 
   /* Simple fade animation */
   @keyframes fadeInLeft {
@@ -542,18 +522,46 @@
     display: none !important;
   }
 
+  
+    
+
   @media (max-width: 768px) {
     .hero-content {
       width: 100%;
       text-align: center;
     }
-    .hero-content h1 {
-      font-size: 2rem;
-    }
-    .hero-content p {
-      font-size: 1rem;
-    }
+  
+   
+
+   .hero-overlay {
+    position: absolute;
+    top: 137px;
+    left: 10px;
+    height: 100%;
+    width: 100%;
+   /* background: rgba(0, 0, 0, 0.4);  dark overlay for readability */
+    display: flex;
+    align-items:left;
+    padding: 0 30px;
   }
+
+
+   
+    .hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffffff; 
+    /* color: #b5bef5; */
+    text-shadow: 2px 2px 5px #000000; /* Black Shadow */
+     animation: fadeInLeft 2s ease-in-out;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+}
 </style>
 
 <!-- Hero Section -->
@@ -561,12 +569,12 @@
   <div class="swiper hero-swiper">
     <div class="swiper-wrapper">
       <!-- Slide 1 -->
-      <div class="swiper-slide" style="background-image: url('photo_2025-04-06_16-00-18.jpg');">
+      <div class="swiper-slide" style="background-image: url('newimg.jpg');">
         <div class="hero-overlay">
           <div class="hero-content">
-            <h1>Welcome to Make IoT</h1>
-            <p><b>Build Your Career in the Core Electrical and Electronics Domain</b></p>
-          </div>
+            <h1>Welcome to <br>Make IoT</h1>
+            <!-- <p><b>Build Your Career in the Core Electrical and Electronics Domain</b></p> -->
+          </div> 
         </div>
       </div>
 
@@ -575,28 +583,28 @@
         <div class="hero-overlay">
           <div class="hero-content">
             <h1>Get Future-Ready Skills</h1>
-            <p><b>We offer the most advanced technical courses at affordable prices.</b></p>
+            <!-- <p><b>We offer the most advanced technical courses at affordable prices.</b></p> -->
           </div>
         </div>
       </div>
 
       <!-- Slide 3 -->
-      <div class="swiper-slide" style="background-image: url('image_2025-04-10_22-07-24.png');">
+      <!-- <div class="swiper-slide" style="background-image: url('image_2025-04-10_22-07-24.png');">
         <div class="hero-overlay">
           <div class="hero-content">
             <h1>Master Technology by Building Real Projects</h1>
             <p><b>Hands-on projects and real-world applications.</b></p>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Slide 4 -->
-      <div class="swiper-slide" style="background-image: url('photo_2025-04-06_16-01-02.jpg');">
+      <!-- <div class="swiper-slide" style="background-image: url('photo_2025-04-06_16-01-02.jpg');">
         <div class="hero-overlay">
           <div class="hero-content">
             <h1>Turn Your Skills Into Your Dream Job</h1>
             <p> <b> Get your first job with Make IoT within 90 Days</b></p>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -621,47 +629,498 @@
 </script>
 
 
+<style>
+  /* .custom-batches-section {
+    padding: 60px 20px;
+    background-color: #fff;
+  }
+
+  .custom-batches-table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #0b0b0b;
+  }
+
+  .custom-batches-table th,
+  .custom-batches-table td {
+    padding: 12px;
+    border: 1px solid #0e0e0e;
 
 
+  }
 
+  .custom-batches-table thead {
+    background-color: #ff5722;
+    color: white;
+  
+  }
+
+  .custom-enroll-btn {
+    padding: 8px 14px;
+    background-color: #e64a19;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .custom-batches-wrapper1{
+    display: none;
+  }
+  
+Mobile Styles
+ @media (max-width: 768px) {
+  .custom-batches-section1 {
+    padding: 10px;
+    background-color: #fff;
+
+  }
+
+  .custom-batches-wrapper{
+    display: none;
+  }
+  .custom-batches-wrapper1 {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+  }
+
+  .custom-batches-table1 {
+    font-size: 12px;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+  }
+
+  .custom-batches-table1 thead {
+    background-color: #ff5722;
+    color: white;
+    display: table-header-group;
+    font-size: 14px;
+  }
+
+  .custom-batches-table1 th,
+  .custom-batches-table1 td {
+    padding: 6px;
+    font-size: 11px;
+    border: 1px solid black;
+  }
+
+  .custom-enroll-btn {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+}
+
+  
+</style> 
+ <!-- <div class="custom-batches-wrapper">
+<section id="batches" class="custom-batches-section">
+  <h2 style="text-align: center; margin-bottom: 30px; font-size: 28px; font-weight: bold; color: #333;">
+    📅 Upcoming Batches
+  </h2>
+  <div>
+    <table class="custom-batches-table">
+      <thead>
+        <tr>
+         <th style="font-size: 22px;">Sr No</th>
+          <th style="font-size: 22px;">Course</th>
+          <th style="font-size: 22px;">Mode</th>
+          <th style="font-size: 22px;">Date</th>
+          <th style="font-size: 22px;">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Sr No" style="font-size: 18px;">1</td>
+          <td data-label="Course" style="font-size: 18px;">Master Embedded System in 90 Days</td>
+          <td data-label="Mode" style="font-size: 18px;">Offline+Online</td>
+          <td data-label="Date" style="font-size: 18px;">1 July 2025</td>
+          <td data-label="Action">
+            <button class="custom-enroll-btn" style="font-size: 18px;">Enroll Now</button>
+          </td>
+        </tr>
+        <tr>
+          <td data-label="Sr No" style="font-size: 18px;">2</td>
+          <td data-label="Course" style="font-size: 18px;">Master PLC-SCADA System in 30 Days</td>
+          <td data-label="Mode" style="font-size: 18px;">Offline+Online</td>
+          <td data-label="Date" style="font-size: 18px;">1 July 2025</td>
+          <td data-label="Action">
+            <button class="custom-enroll-btn" style="font-size: 18px;">Enroll Now</button>
+          </td>
+        </tr>
+        <tr>
+          <td data-label="Sr No">3</td>
+          <td data-label="Course" style="font-size: 18px;">Free Embedded and IoT Internship</td>
+          <td data-label="Mode" style="font-size: 18px;">Offline+Online</td>
+          <td data-label="Date" style="font-size: 18px;">1 July 2025</td>
+          <td data-label="Action">
+            <button class="custom-enroll-btn" style="font-size: 18px;">Enroll Now</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+</div> -->
+
+<!-- 
+<div class="custom-batches-wrapper1">
+<section id="batches1" class="custom-batches-section">
+  <h2 style="text-align: center; margin-bottom: 20px; font-size: 28px; font-weight: bold; color: #333;">
+    📅 Upcoming Batches
+  </h2>
+  <div>
+    <table class="custom-batches-table1">
+      <thead>
+        <tr>
+          <th>Sr No</th>
+          <th>Course</th>
+          <th>Mode</th>
+          <th>Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Sr No">1</td>
+          <td data-label="Course">Master Embedded System in 90 Days</td>
+          <td data-label="Mode">Offline+Online</td>
+          <td data-label="Date">1 July 2025</td>
+          <td data-label="Action">
+            <button class="custom-enroll-btn">Enroll Now</button>
+          </td>
+        </tr>
+        <tr>
+          <td data-label="Sr No">2</td>
+          <td data-label="Course">Master PLC-SCADA System in 30 Days</td>
+          <td data-label="Mode">Offline+Online</td>
+          <td data-label="Date">1 July 2025</td>
+          <td data-label="Action">
+            <button class="custom-enroll-btn">Enroll Now</button>
+          </td>
+        </tr>
+        <tr>
+          <td data-label="Sr No">3</td>
+          <td data-label="Course">Free Embedded and IoT Internship</td>
+          <td data-label="Mode">Offline+Online</td>
+          <td data-label="Date">1 July 2025</td>
+          <td data-label="Action">
+            <button class="custom-enroll-btn">Enroll Now</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+</div> 
+ -->
+
+
+<script>
+  const callbackBtn = document.getElementById("callbackBtn");
+  const callbackForm = document.getElementById("callbackForm");
+  const closeForm = document.getElementById("closeForm");
+  const enrollButtons = document.querySelectorAll(".custom-enroll-btn");
+
+  // Show and Hide form functions
+  function showForm() {
+    callbackForm.classList.add("active");
+  }
+
+  function hideForm() {
+    callbackForm.classList.remove("active");
+  }
+
+  // Event listeners for buttons
+  callbackBtn.addEventListener("click", showForm);
+  closeForm.addEventListener("click", hideForm);
+  enrollButtons.forEach(btn => btn.addEventListener("click", showForm));
+
+  // Submit to Google Sheet
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyxoHvMT10iR8JfQEjE23J3pOgifAWj1FttCAnb8hHP81naKXEp2svxBVzrHz66ogbk/exec';
+  const form = document.forms['contact-form'];
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    // 👇 Instantly close the form
+    hideForm();
+    alert("Thank you for requesting!");
+
+    // 👇 Then continue submitting in background
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(() => window.location.reload())
+      .catch(error => console.error('Error!', error.message));
+  });
+</script>
+
+
+<style>
+  /* === GLOBAL: No horizontal scroll === */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100%; overflow-x: hidden; font-family: 'Segoe UI', Tahoma, sans-serif; color: #222; }
+  img { max-width: 100%; display: block; }
+
+  /* === Wrapper === */
+  .page-wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  .padding-y { padding-top: 3rem; padding-bottom: 3rem; }
+
+  /* === Section Title === */
+  .main-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: clamp(22px, 3vw, 34px);
+    color: #0f0f10;
+    font-weight: 700;
+  }
+
+  /* === Grid Layout === */
+  .grid-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  @media (min-width: 768px) {
+    .grid-layout { grid-template-columns: 1fr 1fr; }
+  }
+
+  /* === Instruction Box === */
+  .steps-box {
+    background: linear-gradient(135deg, #f8f9fa, #ffffff);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    width: 100%;
+  }
+  .steps-box h2 {
+    font-size: 26px;
+    color: #198754;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .steps-box ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .steps-box ul li {
+    padding: 10px 0;
+    font-size: 18px;
+    color: #444;
+    border-bottom: 1px solid #e9ecef;
+  }
+  .steps-box ul li::before {
+    content: "✅ ";
+    color: #198754;
+    font-weight: bold;
+  }
+
+  /* === Certificate Block === */
+  .cert-container h2 {
+    font-size: 26px;
+    color: #198754;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .cert-img-wrapper {
+    height: 310px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .cert-img-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+
+  
+.internship-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  gap: 10px;
+  width: 500px;
+}
+
+.internship-text {
+  font-size: 18px;
+  max-width: 55%;
+  color: #444;
+}
+
+.internship-row {
+  display: flex;
+  gap: 70px;
+  width: 1100px;
+}
+
+.internship-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  flex: 1;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.internship-card h3 {
+  color: #2d6a4f;
+  font-size: 20px;
+}
+ 
+
+  /* Mobile responsive */
+@media (max-width: 768px) {
+
+  .internship-section {
+    flex-direction: column;
+    text-align: center;
+    width: 100%; /* Full width on mobile */
+    gap: 15px;
+  }
+
+  .internship-text {
+    max-width: 100%; /* Allow full text width */
+    font-size: 16px; /* Slightly smaller for mobile */
+  }
+
+  .internship-row {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .internship-card {
+    width: 100%; /* Card takes full width */
+  }
+
+  .internship-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="page-wrapper padding-y">
+  <h1 class="main-title">"Master Embedded & IoT Engineering Through Hands-On Internships" 🚀</h1>
+
+  <div class="grid-layout">
+    <!-- Left: Instructions -->
+    <div>
+      <div class="steps-box">
+        <h2>4-Week IoT & Embedded Internship</h2>
+        <ul>
+          <li><b>Enroll</b> – Sign up for the internship program.</li>
+          <li><b>Get Access</b> – Unlock all courses & assignments.</li>
+          <li><b>Learn & Practice</b> – Complete and submit weekly assignments.</li>
+          <li><b>Review & Feedback</b> – Get expert feedback on your work.</li>
+          <li><b>Earn Your Certificate</b> – Receive your official completion certificate.</li>
+          <li><b>Showcase Your Skills</b> – Add it to your LinkedIn & resume.</li>
+        </ul>
+
+          
+
+          <!-- <div class="internship-image">
+            <img src="2.png" alt="Internship" />
+          </div> -->
+        </div>
+
+        <div class="internship-section">
+          <div class="internship-text">
+            <div class="internship-row">
+              <div class="internship-card">
+                <h3>🚀 Online Internship</h3>
+                <p><b>💰 Fee: ₹ 999/-</b><br>
+                  Live/Recorded Classes + Doubt Sessions</p>
+              </div>
+
+              <div class="internship-card">
+                <h3>🏆 Offline Internship</h3>
+                <p><b>💰 Fee: ₹ 1499/-</b><br>
+                  Address: Make IoT, Gera Imperium Rise, Hinjawadi Phase II, Pune</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Right: Certificate -->
+    <div class="cert-container">
+      <h2>Internship Certificate</h2>
+      <div class="cert-img-wrapper">
+        <img src="intercertificate.png" alt="Internship Certificate">
+      </div>
+    </div>
+  </div>
+</div> 
 
 <section class="courses" id="courses">
-  <h2 style="font-size: 28px;">Explore Top Courses 📚</h2>
+  <!-- <h2 style="font-size: 28px;">"Master Embedded & IoT Engineering Through Hands-On Internships" ✅</h2> -->
   <div class="course-container">
 
+
+  
     <div class="course">
-      <img src="1co.png" alt="Embeddedsystem">
-    
-      <a href="Master Embedded System in 90 Days (4).pdf"
+     <img src="inter2.png" alt="Embeddedsystem">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVfKd2XGsgBxZ8jupxqPUUburfrli4-auiWVYmQMHrZIOlyA/viewform"
          onclick="openPDF()" 
-         style="display: inline-block; padding: 10px 20px; background-color: orange; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin-bottom: 15px;">
+         style="display: inline-block; padding: 10px 20px; background-color: rgb(29, 66, 247); color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin-bottom: 15px; margin: left 20px;">
+        Enroll now
+      </a>
+   
+      <a href="Arduino and IoT Internship.pdf"
+         onclick="openPDF()" 
+         style="display: inline-block; padding: 10px 20px; background-color: orange; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin-bottom: 15px; margin-left: 20px;">
         Get Syllabus
       </a>
+      
     
-      <p style="font-size: 1.2rem; font-weight: bold;">
+      <!-- <p style="font-size: 1.2rem; font-weight: bold;">
         Course <span style="text-decoration: line-through; color: red;">₹30,000</span> only at <span style="color: green;">₹9,999/- Only</span>
-      </p>
+      </p> -->
+     
     </div>
-    
 
-    
+
     <div class="course">
-      <img src="Master PLC and SCADA (2) (2).png" alt="PLC SCADA">
-    
-      <a href="plc scada.pdf" 
-    
-       onclick="openPDF()" 
-         style="display: inline-block; padding: 10px 20px; background-color: orange; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin-bottom: 15px;">
+      <img src="inter1.png" alt="Embeddedsystem">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVfKd2XGsgBxZ8jupxqPUUburfrli4-auiWVYmQMHrZIOlyA/viewform"
+         onclick="openPDF()" 
+         style="display: inline-block; padding: 10px 20px; background-color:  rgb(29, 66, 247); color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin-bottom: 15px; margin-left: 5px;">
+       Enroll now
+      </a>
+       <a href="[Internship]Embedded System Design .pdf"
+         onclick="openPDF()" 
+         style="display: inline-block; padding: 10px 20px; background-color: orange; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; margin-bottom: 15px; margin-left: 20px;">
         Get Syllabus
       </a>
+      
     
-      <p style="font-size: 1.2rem; font-weight: bold;">
+      <!-- <p style="font-size: 1.2rem; font-weight: bold;">
         Course <span style="text-decoration: line-through; color: red;">₹30,000</span> only at <span style="color: green;">₹9,999/- Only</span>
-      </p>
+      </p> -->
     </div>
-
-
     
+
+  
+  </div>
+
+<!--     
     <div class="course">
       <img src="automotive.png" alt="automotive">
     
@@ -692,18 +1151,16 @@
       <p style="font-size: 1.2rem; font-weight: bold;">
         Course <span style="text-decoration: line-through; color: red;">₹30,000</span> only at <span style="color: green;">₹9,999/- Only</span>
       </p>
-    </div>
+    </div> -->
 
 
-    
+     
 
 <style>
 
-  
-  
 
 /* Explore Top Courses Section */
-.courses {
+ .courses {
     padding: 20px 20px;
     text-align: center;
     background: #f9f9f9;
@@ -731,9 +1188,9 @@
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 300px;
+    width: 360px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-   height:450px;
+   height:440px;
   }
   
   .course img {
@@ -755,7 +1212,7 @@
   .course-btn {
     display: inline-block;
     padding: 10px 20px;
-    background: #ffcc00;
+    background: #00ffaa;
     color: black;
     text-decoration: none;
     font-weight: bold;
@@ -772,7 +1229,7 @@
   }
   
   /* Hover Effect on Course Cards */
-  .course:hover {
+   .course:hover {
     transform: translateY(-5px);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   }
@@ -799,7 +1256,7 @@
   
   #info-box {
     display: none; /* Pehle hide rahega */
-    padding: 15px;
+    /* padding: 15px;
     border: 1px solid #ccc;
     margin: 10px 0;
     background-color: #f9f9f9;
@@ -818,13 +1275,13 @@
     background-color: #0056b3;
   }
   #syllabus-button {
-    display: none; /* Pehle hide rahega */
+    display: none; 
   }
-  
+   
 
 
 
-  @media(max-width:768px)
+   @media(max-width:768px)
   {
     
     courses {
@@ -894,9 +1351,9 @@
     background: black;
     color: white;
   }
-  
+   
   /* Hover Effect on Course Cards */
-  .course:hover {
+   .course:hover {
     transform: translateY(-5px);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   }
@@ -922,13 +1379,13 @@
   }
   
   #info-box {
-    display: none; /* Pehle hide rahega */
+    display: none;
     padding: 15px;
     border: 1px solid #ccc;
     margin: 10px 0;
     background-color: #f9f9f9;
-  }
-  button {
+  } 
+     button {
     padding: 10px 15px;
     font-size: 16px;
     cursor: pointer;
@@ -942,247 +1399,14 @@
     background-color: #0056b3;
   }
   #syllabus-button {
-    display: none; /* Pehle hide rahega */
+    display: none; 
   }
   
-  }
-  
+  } 
+    
 </style>
 
 
-
-
-<style>
-  .custom-batches-section {
-    padding: 60px 20px;
-    background-color: #fff;
-  }
-
-  .custom-batches-table {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    border-collapse: collapse;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid #0b0b0b;
-  }
-
-  .custom-batches-table th,
-  .custom-batches-table td {
-    padding: 12px;
-    border: 1px solid #0e0e0e;
-
-
-  }
-
-  .custom-batches-table thead {
-    background-color: #ff5722;
-    color: white;
-  
-  }
-
-  .custom-enroll-btn {
-    padding: 8px 14px;
-    background-color: #e64a19;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .custom-batches-wrapper1{
-    display: none;
-  }
-  
-/* Mobile Styles */
-@media (max-width: 768px) {
-  .custom-batches-section1 {
-    padding: 10px;
-    background-color: #fff;
-
-  }
-
-  .custom-batches-wrapper{
-    display: none;
-  }
-  .custom-batches-wrapper1 {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    display: flex;
-  }
-
-  .custom-batches-table1 {
-    font-size: 12px;
-    width: 100%;
-    max-width: 100%;
-    box-shadow: none;
-  }
-
-  .custom-batches-table1 thead {
-    background-color: #ff5722;
-    color: white;
-    display: table-header-group;
-    font-size: 14px;
-  }
-
-  .custom-batches-table1 th,
-  .custom-batches-table1 td {
-    padding: 6px;
-    font-size: 11px;
-    border: 1px solid black;
-  }
-
-  .custom-enroll-btn {
-    padding: 4px 8px;
-    font-size: 10px;
-  }
-}
-
-  
-</style>
-<div class="custom-batches-wrapper">
-<section id="batches" class="custom-batches-section">
-  <h2 style="text-align: center; margin-bottom: 30px; font-size: 28px; font-weight: bold; color: #333;">
-    📅 Upcoming Batches
-  </h2>
-  <div>
-    <table class="custom-batches-table">
-      <thead>
-        <tr>
-         <th style="font-size: 22px;">Sr No</th>
-          <th style="font-size: 22px;">Course</th>
-          <th style="font-size: 22px;">Mode</th>
-          <th style="font-size: 22px;">Date</th>
-          <th style="font-size: 22px;">Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-label="Sr No" style="font-size: 18px;">1</td>
-          <td data-label="Course" style="font-size: 18px;">Master Embedded System in 90 Days</td>
-          <td data-label="Mode" style="font-size: 18px;">Offline+Online</td>
-          <td data-label="Date" style="font-size: 18px;">1 July 2025</td>
-          <td data-label="Action">
-            <button class="custom-enroll-btn" style="font-size: 18px;">Enroll Now</button>
-          </td>
-        </tr>
-        <tr>
-          <td data-label="Sr No" style="font-size: 18px;">2</td>
-          <td data-label="Course" style="font-size: 18px;">Master PLC-SCADA System in 30 Days</td>
-          <td data-label="Mode" style="font-size: 18px;">Offline+Online</td>
-          <td data-label="Date" style="font-size: 18px;">1 July 2025</td>
-          <td data-label="Action">
-            <button class="custom-enroll-btn" style="font-size: 18px;">Enroll Now</button>
-          </td>
-        </tr>
-        <tr>
-          <td data-label="Sr No">3</td>
-          <td data-label="Course" style="font-size: 18px;">Free Embedded and IoT Internship</td>
-          <td data-label="Mode" style="font-size: 18px;">Offline+Online</td>
-          <td data-label="Date" style="font-size: 18px;">1 July 2025</td>
-          <td data-label="Action">
-            <button class="custom-enroll-btn" style="font-size: 18px;">Enroll Now</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-</div>
-
-
-  
-</style>
-<div class="custom-batches-wrapper1">
-<section id="batches1" class="custom-batches-section">
-  <h2 style="text-align: center; margin-bottom: 20px; font-size: 28px; font-weight: bold; color: #333;">
-    📅 Upcoming Batches
-  </h2>
-  <div>
-    <table class="custom-batches-table1">
-      <thead>
-        <tr>
-          <th>Sr No</th>
-          <th>Course</th>
-          <th>Mode</th>
-          <th>Date</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-label="Sr No">1</td>
-          <td data-label="Course">Master Embedded System in 90 Days</td>
-          <td data-label="Mode">Offline+Online</td>
-          <td data-label="Date">1 July 2025</td>
-          <td data-label="Action">
-            <button class="custom-enroll-btn">Enroll Now</button>
-          </td>
-        </tr>
-        <tr>
-          <td data-label="Sr No">2</td>
-          <td data-label="Course">Master PLC-SCADA System in 30 Days</td>
-          <td data-label="Mode">Offline+Online</td>
-          <td data-label="Date">1 July 2025</td>
-          <td data-label="Action">
-            <button class="custom-enroll-btn">Enroll Now</button>
-          </td>
-        </tr>
-        <tr>
-          <td data-label="Sr No">3</td>
-          <td data-label="Course">Free Embedded and IoT Internship</td>
-          <td data-label="Mode">Offline+Online</td>
-          <td data-label="Date">1 July 2025</td>
-          <td data-label="Action">
-            <button class="custom-enroll-btn">Enroll Now</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-</div>
-
-
-
-<script>
-  const callbackBtn = document.getElementById("callbackBtn");
-  const callbackForm = document.getElementById("callbackForm");
-  const closeForm = document.getElementById("closeForm");
-  const enrollButtons = document.querySelectorAll(".custom-enroll-btn");
-
-  // Show and Hide form functions
-  function showForm() {
-    callbackForm.classList.add("active");
-  }
-
-  function hideForm() {
-    callbackForm.classList.remove("active");
-  }
-
-  // Event listeners for buttons
-  callbackBtn.addEventListener("click", showForm);
-  closeForm.addEventListener("click", hideForm);
-  enrollButtons.forEach(btn => btn.addEventListener("click", showForm));
-
-  // Submit to Google Sheet
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyxoHvMT10iR8JfQEjE23J3pOgifAWj1FttCAnb8hHP81naKXEp2svxBVzrHz66ogbk/exec';
-  const form = document.forms['contact-form'];
-
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-
-    // 👇 Instantly close the form
-    hideForm();
-    alert("Thank you for requesting!");
-
-    // 👇 Then continue submitting in background
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-      .then(() => window.location.reload())
-      .catch(error => console.error('Error!', error.message));
-  });
-</script>
 
 
 
@@ -1222,6 +1446,7 @@
       <a href="https://www.youtube.com/@MakeIoT" target="_blank" class="btn btn-custom">Watch More Videos</a>
     </div>
 
+    
   </div>
 </div>
 
@@ -1321,7 +1546,7 @@
 
   .left-block {
     order: 1;
-    width:400px;
+    width:350px;
   }
 
   
@@ -1361,7 +1586,6 @@
 }
 }
 </style>
-
 
 
   <style>
@@ -1477,9 +1701,40 @@
 }
 
 }
+.custom-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.custom-box ul {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+}
+
+.certificate-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificate-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
 </style>
 </head>
-<body>
+   
+
+
+
+
+
 
 <section id="event">
 <div class="combined-container">
@@ -1927,6 +2182,7 @@ setInterval(showNextImage, 2000); // 3000 ms = 3 seconds
     gap: 20px;
     padding: 0 40px;
     box-sizing: border-box;
+    padding-bottom: 0%;
   }
 
   .footer-column {
@@ -2059,10 +2315,5 @@ setInterval(showNextImage, 2000); // 3000 ms = 3 seconds
 
   </div>
   </footer>
-
-
-
-
-
 </body>
 </html>
